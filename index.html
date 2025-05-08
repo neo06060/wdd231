@@ -19,6 +19,7 @@
     <span>Saúl Carracelas</span>
     <button id="menu" aria-label="Toggle Menu">☰</button>
   </header>
+
   <nav>
     <ul class="navigation">
       <li><a href="index.html" class="active">Home</a></li>
@@ -28,13 +29,21 @@
       <li><a href="https://www.linkedin.com/in/sa%C3%BAl-carracelas-gonz%C3%A1lez-albo-b5a86b257/" target="_blank">LinkedIn</a></li>
     </ul>
   </nav>
+
   <main>
     <h1>Home</h1>
-    <section>
-      <h2>About Me</h2>
-      <p>Hello my name is Saúl. I live in Spain with my family, Im 19 years old and I enjoy coding a lot.</p>
-    </section>
-    <section>
+
+    <div class="home-top">
+      <div class="image-placeholder">image here</div>
+    
+      <section class="about-text">
+        <h2>About Me</h2>
+        <p>Hello my name is Saúl. I live in Spain with my family, I'm 19 years old and I enjoy coding a lot.</p>
+      </section>
+    </div>
+    
+
+    <section class="course-section">
       <h2>Course Certificate</h2>
       <div>
         <button id="allCourses">All Courses</button>
@@ -44,11 +53,13 @@
       <div id="courseList"></div>
       <p>Total Credits: <span id="creditTotal">0</span></p>
     </section>
-    <section>
+
+    <section class="latest-projects">
       <h2>Latest Projects</h2>
       <p>Links or previews of your recent work.</p>
     </section>
   </main>
+
   <footer>
     <p>&copy; <span id="year"></span> Saúl Carracelas | Spain</p>
     <p id="lastModified"></p>
