@@ -20,15 +20,12 @@
   }
 
   .home-top {
-    flex-direction: row;        /* Key: now image + about-text are side-by-side */
-    align-items: center;
-    justify-content: flex-start;
-    text-align: left;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .about-text {
     margin-left: 2rem;
-    max-width: 500px;
   }
 
   #courseList {
@@ -41,7 +38,6 @@
     width: 200px;
   }
 }
-
 
   .image-placeholder {
     flex-shrink: 0;
