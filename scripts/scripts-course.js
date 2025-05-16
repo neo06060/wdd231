@@ -31,4 +31,4 @@ document.getElementById("cseCourses").addEventListener("click", () => {
   displayCourses(courses.filter(c => c.code.startsWith("CSE")));
 });
 
-displayCourses(courses); // Load all by default
+displayCourses(courses); 
