@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Business directory for the Chamber of Commerce." />
+  <meta name="author" content="Your Name" />
+  <title>Chamber Directory</title>
+
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+
+  <meta property="og:title" content="Chamber Business Directory" />
+  <meta property="og:description" content="Explore the businesses and members in our local chamber." />
+  <meta property="og:image" content="https://yourdomain.com/images/social-preview.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/directory.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <button id="menu-button">☰ Menu</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view-buttons">
+      <button id="gridView">Grid View</button>
+      <button id="listView">List View</button>
+    </section>
+    <section id="members-container" class="grid"></section>
+  </main>
+
+  <footer>
+    <p>Contact: info@chamber.com | (123) 456-7890</p>
+    <p>&copy; <span id="year"></span> | Your Name | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

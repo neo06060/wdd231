@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Tech Solutions",
+      "address": "123 Innovation Way",
+      "phone": "555-1234",
+      "website": "https://techsolutions.com",
+      "image": "tech.png",
+      "membership": 3,
+      "info": "Providing modern IT solutions."
+    },
+    {
+      "name": "Green Landscaping",
+      "address": "456 Garden Ave",
+      "phone": "555-5678",
+      "website": "https://greenlandscaping.com",
+      "image": "green.png",
+      "membership": 2,
+      "info": "Eco-friendly landscaping services."
+    }
+  ]
+  
