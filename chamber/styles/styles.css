@@ -1,34 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    line-height: 1.5;
-    background-color: #f5f5f5;
-  }
-  
-  header, footer {
-    background-color: #003366;
-    color: white;
-    padding: 1em;
-    text-align: center;
-  }
-  
+  font-family: 'Raleway', sans-serif, 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+  color: #222;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #174873;
+  color: white;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif; 
+}
+header img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+header span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  font-family: 'Montserrat', sans-serif; 
+}
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+/* NAVIGATION */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  justify-content: center; /* Desktop: center items */
+  flex-wrap: wrap;
+}
+
+nav ul.open,
+nav ul.show {
+  display: flex !important;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  border-bottom: none;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  border: none;
+  box-sizing: border-box;
+}
+
+nav a.active {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
   nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0;
+    flex-direction: column;
+    background-color: #003366;
+    display: none;
+    align-items: flex-start; /* <--- This fixes the center shift */
+    justify-content: flex-start; /* <--- Prevents centering */
+    padding-left: 1rem; /* optional: add left padding */
   }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
+
+  nav ul.open,
+  nav ul.show {
+    display: flex !important;
   }
-  
-  nav ul li a.active {
-    text-decoration: underline;
+
+  nav ul li {
+    margin: 0;
+    border-bottom: 1px solid #333;
+    width: 100%; /* optional: full width items */
   }
-  
+}
+
+
+main {
+  padding: 1rem;
+  font-family: 'Raleway', sans-serif, 'Montserrat', sans-serif; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
   .view-buttons {
     text-align: center;
     margin: 1em 0;
@@ -68,25 +145,77 @@ body {
   #menu-button {
     display: none;
   }
-  
-  @media (max-width: 600px) {
-    nav ul {
-      display: none;
-      flex-direction: column;
-      background-color: #003366;
-    }
-  
-    nav ul.show {
-      display: flex;
-    }
-  
-    #menu-button {
-      display: block;
-      background: none;
-      color: white;
-      border: none;
-      font-size: 1.2em;
-      margin-bottom: 1em;
-    }
+button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+main {
+  padding: 1rem;
+  font-family: 'Raleway', sans-serif, 'Montserrat', sans-serif; 
+}
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  
+
+  .home-top {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-text {
+    margin-left: 2rem;
+  }
+
+  #courseList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .course-card {
+    width: 200px;
+  }
+
+  .image-placeholder {
+    flex-shrink: 0;
+  }
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #174873;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; 
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; 
+  font-style: normal;
+}
