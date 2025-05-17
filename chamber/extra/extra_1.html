@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="images/go back.jpg" type="image/x-icon" />
+  <title>Example Page</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+    }
+
+    .box {
+      text-align: center;
+      padding: 2rem;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .message {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-button {
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      background-color: #c9302c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <div class="message">
+      This is an example. Please go back to the previous page to keep grading.
+    </div>
+    <button class="back-button" onclick="goBack()">Go Back</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

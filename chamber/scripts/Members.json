@@ -3,19 +3,28 @@
       "name": "Tech Solutions",
       "address": "123 Innovation Way",
       "phone": "555-1234",
-      "website": "https://techsolutions.com",
-      "image": "tech.png",
-      "membership": 3,
+      "website": "extra/extra_1.html",
+      "image": "vro.jpg",
+      "membership": 1,
       "info": "Providing modern IT solutions."
     },
     {
       "name": "Green Landscaping",
       "address": "456 Garden Ave",
       "phone": "555-5678",
-      "website": "https://greenlandscaping.com",
-      "image": "green.png",
+      "website": "extra/extra_1.html",
+      "image": "boff.jpg",
       "membership": 2,
       "info": "Eco-friendly landscaping services."
+    },
+    {
+      "name": "Pet caretaker",
+      "address": "421 Paco Ave",
+      "phone": "432-9011",
+      "website": "extra/extra_1.html",
+      "image": "berd.jpg",
+      "membership": 3,
+      "info": "Peta approved pet caretaker."
     }
   ]
   
