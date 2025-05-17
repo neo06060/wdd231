@@ -26,7 +26,7 @@ function displayMembers(members) {
       <p>${member.address}</p>
       <p>${member.phone}</p>
       <a href="${member.website}" target="_blank">Visit Site</a>
-      <p><strong>${["Bronze", "Silver", "Gold"][member.membership - 1]} Member</strong></p>
+      <p><strong>${["Bronze", "Silver", "Gold", "Diamond"][member.membership - 1]} Member</strong></p>
       <p>${member.info}</p>
     `;
     container.appendChild(card);

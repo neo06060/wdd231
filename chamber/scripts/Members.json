@@ -18,13 +18,22 @@
       "info": "Eco-friendly landscaping services."
     },
     {
-      "name": "Pet caretaker",
-      "address": "421 Paco Ave",
+      "name": "Lazy Loading Images",
+      "address": "333 Daniel Ave",
       "phone": "432-9011",
       "website": "extra/extra_1.html",
-      "image": "berd.jpg",
+      "image": "nomorewaiting.jpg",
       "membership": 3,
-      "info": "Peta approved pet caretaker."
+      "info": "Helps performance — only loads images as users scroll."
+    },
+    {
+      "name": "Pet caretaking tutorial",
+      "address": "421 Paco Ave",
+      "phone": "797-0101",
+      "website": "extra/extra_1.html",
+      "image": "berd.jpg",
+      "membership": 4,
+      "info": "Peta approved pet caretaking tutorial."
     }
   ]
   
