@@ -197,3 +197,64 @@ footer {
   font-weight: 400;
   font-style: normal;
 }
+.hero {
+  display: flex;
+  justify-content: center;  /* Centers content horizontally */
+  align-items: center;      /* Centers content vertically if there's height */
+  overflow: hidden;
+  max-height: 500px;
+  padding: 1rem;
+}
+
+.hero img {
+  width: 50%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.cta-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #174873;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#weather,
+#events,
+#spotlights {
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.spotlight-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.spotlight {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.spotlight img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
