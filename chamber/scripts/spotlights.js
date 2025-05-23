@@ -13,7 +13,7 @@ async function loadSpotlights() {
     // Shuffle and pick 2-3
     const selected = spotlightCandidates
       .sort(() => 0.5 - Math.random())
-      .slice(0, 3);
+      .slice(0, 4);
 
     selected.forEach(member => {
       const div = document.createElement("div");
