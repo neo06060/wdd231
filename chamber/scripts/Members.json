@@ -27,6 +27,42 @@
       "info": "Helps performance — only loads images as users scroll."
     },
     {
+      "name": "The Cheese Society",
+      "address": "101 Brie Blvd",
+      "phone": "555-1122",
+      "website": "extra/extra_1.html",
+      "image": "cheese.png",
+      "membership": 2,
+      "info": "Monthly cheese boxes curated from around the world."
+    },
+    {
+      "name": "Vinyl Vault Club",
+      "address": "45 Turntable Ln",
+      "phone": "555-2211",
+      "website": "extra/extra_1.html",
+      "image": "vynil.jpg",
+      "membership": 2,
+      "info": "Classic records delivered monthly for audiophiles."
+    },
+    {
+      "name": "FitFuel Pack",
+      "address": "303 Wellness Ave",
+      "phone": "555-6543",
+      "website": "extra/extra_1.html",
+      "image": "fitguy.png",
+      "membership": 2,
+      "info": "Pre-portioned fitness meals for active lifestyles."
+    },
+    {
+      "name": "SketchStream",
+      "address": "500 Artline Cir",
+      "phone": "555-7821",
+      "website": "extra/extra_1.html",
+      "image": "fire.jpg",
+      "membership": 1,
+      "info": "Daily artist sketches for you to follow."
+    },
+    {
       "name": "Pet caretaking tutorial",
       "address": "421 Paco Ave",
       "phone": "797-0101",
