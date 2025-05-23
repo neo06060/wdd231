@@ -1,6 +1,4 @@
 const weatherContainer = document.getElementById("weather");
-
-// Coordinates for your chamber location (Madrid, Spain used as an example)
 const lat = 40.4168;
 const lon = -3.7038;
 

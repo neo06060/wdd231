@@ -5,12 +5,10 @@ async function loadSpotlights() {
     const response = await fetch("scripts/Members.json");
     const members = await response.json();
 
-    // Filter gold/silver
     const spotlightCandidates = members.filter(m =>
       m.membership === 2 || m.membership === 3
     );
 
-    // Shuffle and pick 2-3
     const selected = spotlightCandidates
       .sort(() => 0.5 - Math.random())
       .slice(0, 4);
