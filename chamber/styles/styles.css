@@ -198,26 +198,24 @@ footer {
   font-style: normal;
 }
 .hero {
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
+  height: 500px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto;
   overflow: hidden;
-  max-height: 500px;
-  padding: 1rem;
 }
+
 
 .hero img {
-  width: 50%;
-  height: auto;
-  max-height: 500px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  display: block;
 }
-
 
 .cta-button {
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: #174873;
@@ -226,6 +224,15 @@ footer {
   border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    bottom: 10%;
+  }
 }
 
 #weather,

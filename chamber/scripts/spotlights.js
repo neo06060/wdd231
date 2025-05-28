@@ -11,7 +11,7 @@ async function loadSpotlights() {
 
     const selected = spotlightCandidates
       .sort(() => 0.5 - Math.random())
-      .slice(0, 4);
+      .slice(0, 3);
 
     selected.forEach(member => {
       const div = document.createElement("div");
