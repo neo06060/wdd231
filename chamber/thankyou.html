@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thank You</title>
   <link rel="stylesheet" href="styles/styles.css"/>
-    <link rel="icon" href="../images/mrwhite.jpg" type="image/x-icon"/>
+  <link rel="icon" href="../images/mrwhite.jpg" type="image/x-icon"/>
+  <script defer src="scripts/thankyou.js"></script>
+  <script defer src="scripts/script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Thank You for Joining!</h1>
-  </header>
-  <main>
-    <p>We have received your information:</p>
-    <ul id="formDataList"></ul>
-  </main>
-  <footer>
-    <p>&copy; <span id="year"></span> Saúl Carracelas</p>
-  </footer>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const list = document.getElementById("formDataList");
-    const keys = ["firstname", "lastname", "email", "phone", "organization", "timestamp"];
-    keys.forEach(key => {
-      if (params.get(key)) {
-        const li = document.createElement("li");
-        li.textContent = `${key.charAt(0).toUpperCase() + key.slice(1)}: ${params.get(key)}`;
-        list.appendChild(li);
-      }
-    });
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <header>
+    <img src="../images/hapi.png" alt="Your Photo" width="75" height="75" />
+    <span>Thank you for joining!!!</span>
+    <button id="menu" aria-label="Toggle Menu">☰</button>
+  </header>
+
+  <nav>
+    <ul id="navList">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Chamber</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main class="thankyou-main">
+    <div class="board-container" style="margin-top: 4rem;">
+      <img src="../images/bulleting_board.png" alt="Bulletin Board" class="board-img" />
+      <ul id="formDataList" class="board-plain-text"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact: example@gmail.com | +34 000 00 00 00</p>
+    <p>&copy; <span id="year"></span> | Saúl Carracelas | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>
