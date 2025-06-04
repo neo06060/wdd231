@@ -113,6 +113,8 @@ footer {
 }
 
 .wireframe-img {
-  width: 45%;
-  height: auto;
+  width: 450px;
+  height: 450px;
+  object-fit: contain; 
+  border: 0px solid; 
 }
