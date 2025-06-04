@@ -8,6 +8,9 @@ body {
   background-color: #f7f9fb;
   color: #222;
 }
+#menu:hover {
+  color: #ccc;
+}
 
 header {
   display: flex;
@@ -61,8 +64,9 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: #2a5e90; 
 }
+
 
 main {
   padding: 2rem;
