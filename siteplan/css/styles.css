@@ -85,8 +85,6 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-
-/* Responsive nav */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
