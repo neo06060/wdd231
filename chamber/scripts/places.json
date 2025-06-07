@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Old Bridge of Ourense",
+    "address": "Ponte Vella, Rúa Progreso, 32001 Ourense, Galicia, Spain",
+    "website": "extra/extra_1.html",
+    "image": "images2/ourense.jpg",
+    "info": "Historic Roman bridge crossing the Miño River in Ourense."
+  },
+  {
+    "name": "Ruins of Santo Domingo, Pontevedra",
+    "address": "Paseo de Montero Ríos s/n, 36001 Pontevedra, Galicia, Spain",
+    "website": "extra/extra_1.html",
+    "image": "images2/santodoming.jpg",
+    "info": "Remains of a 14th-century Gothic convent in Pontevedra."
+  },
+  {
+    "name": "Hórreo of Carnota",
+    "address": "Praza San Mamede, 15293 Carnota, A Coruña, Galicia, Spain",
+    "website": "extra/extra_1.html",
+    "image": "images2/carnota.jpg",
+    "info": "One of the longest traditional granaries in Galicia."
+  },
+  {
+    "name": "Combarro, Pontevedra",
+    "address": "Rúa do Mar, 36993 Combarro, Pontevedra, Galicia, Spain",
+    "website": "extra/extra_1.html",
+    "image": "images2/pontevedra.jpg",
+    "info": "Charming coastal village known for hórreos and granite houses."
+  },
+  {
+    "name": "Wall of Lugo",
+    "address": "Centro Histórico, 27001 Lugo, Galicia, Spain",
+    "website": "extra/extra_1.html",
+    "image": "images2/lugo.jpg",
+    "info": "Roman wall surrounding the old town of Lugo, UNESCO site."
+  },
+  {
+    "name": "Cathedral of Santiago de Compostela",
+    "address": "Praza do Obradoiro, s/n, 15704 Santiago de Compostela, Galicia, Spain",
+    "website": "extra/extra_1.html",
+    "image": "images2/compostela.jpg",
+    "info": "Pilgrimage destination and final stop of the Camino de Santiago."
+  },
+  {
+    "name": "Combarro Village",
+    "address": "Rúa do Mar, 36993 Combarro, Pontevedra, Galicia, Spain",
+    "website": "extra/extra_1.html",
+    "image": "images2/combarro.jpg",
+    "info": "Historic fishing village with Galician architecture."
+  },
+  {
+    "name": "Mount Santa Trega",
+    "address": "Monte de Santa Trega, 36788 A Guarda, Pontevedra, Galicia, Spain",
+    "website": "extra/extra_1.html",
+    "image": "images2/tegra.jpg",
+    "info": "Scenic mountain with Celtic ruins and views over the Atlantic."
+  }
+]

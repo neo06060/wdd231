@@ -472,21 +472,20 @@ footer {
   flex-shrink: 0;
   border-radius: 6px;
 }
-/* Center the header text */
+
 .thankyou-header {
   text-align: center;
   margin-top: 2rem;
   font-size: 2rem;
   font-weight: bold;
 }
-/* Centered bulletin board */
+
 .board-container {
   position: relative;
   max-width: 700px;
   margin: 8rem auto 2rem;
 }
 
-/* Board image */
 .board-img {
   width: 100%;
   height: auto;
@@ -494,7 +493,7 @@ footer {
   border-radius: 10px;
 }
 
-/* Plain text directly on top of the board */
+
 .board-plain-text {
   position: absolute;
   top: 50%;
@@ -508,12 +507,11 @@ footer {
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
 }
-/* Reduce top margin of board-container for this page only */
+
 .thankyou-main .board-container {
   margin-top: 4rem;
 }
 
-/* Adjust text alignment if necessary */
 header span {
   text-align: left;
 }
