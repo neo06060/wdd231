@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Join the Chamber of Commerce"/>
-  <meta name="author" content="Saúl Carracelas"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Chamber of Commerce">
+  <meta name="author" content="Saúl Carracelas">
   <title>Chamber of Commerce | Join</title>
   <link rel="stylesheet" href="styles/styles.css"/>
-  <link rel="icon" href="../images/mrwhite.jpg" type="image/x-icon"/>
+  <link rel="icon" href="../images/mrwhite.jpg" type="image/x-icon">
   <script defer src="scripts/join.js"></script>
-  <meta property="og:title" content="Subscription page" />
-  <meta property="og:description" content="Explore our subsciptions and the perks that they have." />
-  <meta property="og:image" content="https://neo06060.github.io/wdd231/chamber/images/join_home.png" />
-  <meta property="og:url" content="https://neo06060.github.io/wdd231/index.html" />
+  <meta property="og:title" content="Subscription page">
+  <meta property="og:description" content="Explore our subsciptions and the perks that they have.">
+  <meta property="og:image" content="https://neo06060.github.io/wdd231/chamber/images/join_home.png">
+  <meta property="og:url" content="https://neo06060.github.io/wdd231/index.html">
 </head>
 <body>
 
   <header>
-    <img src="../images/profile.png" alt="Your Photo" width="75" height="75"/>
+    <img src="../images/profile.png" alt="Your Photo" width="75" height="75">
     <span>Saúl Carracelas</span>
     <button id="menu" aria-label="Toggle Menu">☰</button>
   </header>
@@ -38,14 +38,14 @@
   <div class="membership-card" id="card-np">
     <div class="card-content">
       <h3>NP Membership</h3>
-      <img src="../images/unranked.png" alt="Unranked Icon" class="card-icon" />
+      <img src="../images/unranked.png" alt="Unranked Icon" class="card-icon">
     </div>
     <a href="#" onclick="openModal('modal-np')">More Info</a>
   </div>
   <div class="membership-card" id="card-bronze">
     <div class="card-content">
       <h3>Bronze Membership</h3>
-      <img src="../images/bronze.png" alt="Bronze Icon" class="card-icon" />
+      <img src="../images/bronze.png" alt="Bronze Icon" class="card-icon">
     </div>
     <a href="#" onclick="openModal('modal-bronze')">More Info</a>
   </div>
@@ -57,22 +57,22 @@
         <h1>Join the Chamber</h1>
         <form method="get" action="thankyou.html">
           <label>First Name:
-            <input type="text" name="firstname" required autocomplete="given-name" />
+            <input type="text" name="firstname" required autocomplete="given-name">
           </label>
           <label>Last Name:
-            <input type="text" name="lastname" required autocomplete="family-name" />
+            <input type="text" name="lastname" required autocomplete="family-name">
           </label>
           <label>Organizational Title:
-            <input type="text" name="orgtitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+            <input type="text" name="orgtitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
           </label>
           <label>Email:
-            <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com" />
+            <input type="email" name="email" required autocomplete="email" placeholder="example@domain.com">
           </label>
           <label>Mobile Phone:
-            <input type="tel" name="phone" required autocomplete="tel" />
+            <input type="tel" name="phone" required autocomplete="tel">
           </label>
           <label>Organization Name:
-            <input type="text" name="organization" required autocomplete="organization" />
+            <input type="text" name="organization" required autocomplete="organization">
           </label>
           <label>Membership Level:
             <select name="membership" required>
@@ -86,8 +86,8 @@
           <label>Organization Description:
             <textarea name="description"></textarea>
           </label>
-          <input type="hidden" name="timestamp" id="timestamp" />
-          <input type="submit" value="Join Now" />
+          <input type="hidden" name="timestamp" id="timestamp">
+          <input type="submit" value="Join Now">
         </form>
       </div>
     </div>
@@ -97,14 +97,14 @@
   <div class="membership-card" id="card-silver">
     <div class="card-content">
       <h3>Silver Membership</h3>
-      <img src="../images/silver.png" alt="Silver Icon" class="card-icon" />
+      <img src="../images/silver.png" alt="Silver Icon" class="card-icon">
     </div>
     <a href="#" onclick="openModal('modal-silver')">More Info</a>
   </div>
   <div class="membership-card" id="card-gold">
     <div class="card-content">
       <h3>Gold Membership</h3>
-      <img src="../images/gold.png" alt="Gold Icon" class="card-icon" />
+      <img src="../images/gold.png" alt="Gold Icon" class="card-icon">
     </div>
     <a href="#" onclick="openModal('modal-gold')">More Info</a>
   </div>
@@ -119,7 +119,7 @@
         <h2>NP Membership (free)</h2>
         <p>Free membership that allows you to try out the perks for a week.</p>
       </div>
-      <img src="../images/unranked.png" alt="Unranked Icon" class="modal-icon" />
+      <img src="../images/unranked.png" alt="Unranked Icon" class="modal-icon">
     </div>
   </div>
 </div>
@@ -131,7 +131,7 @@
         <h2>Bronze Membership (2,99€)</h2>
         <p>Gives you the bronze badge that allows you to use our bronze quality subscriptions.</p>
       </div>
-      <img src="../images/bronze.png" alt="Bronze Icon" class="modal-icon" />
+      <img src="../images/bronze.png" alt="Bronze Icon" class="modal-icon">
     </div>
   </div>
 </div>
@@ -143,7 +143,7 @@
         <h2>Silver Membership (6,99€)</h2>
         <p>Gives you the silver badge that allows you to use silver and lower tier subscriptions.</p>
       </div>
-      <img src="../images/silver.png" alt="Silver Icon" class="modal-icon" />
+      <img src="../images/silver.png" alt="Silver Icon" class="modal-icon">
     </div>
   </div>
 </div>
@@ -155,7 +155,7 @@
         <h2>Gold Membership (11,99€)</h2>
         <p>Gives you the golden badge with all previous perks, plus priority in queues and faster support responses.</p>
       </div>
-      <img src="../images/gold.png" alt="Gold Icon" class="modal-icon" />
+      <img src="../images/gold.png" alt="Gold Icon" class="modal-icon">
     </div>
   </div>
 </div>
