@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.gridArea = `card${index + 1}`;
         card.innerHTML = `
           <h2>${member.name}</h2>
-          <figure><img src="${member.image}" alt="${member.name}" /></figure>
+          <figure>
+            <img src="${member.image.replace('.jpg', '.webp')}" alt="${member.name}" loading="lazy" />
+          </figure>
           <address>${member.address}</address>
           <p>${member.info}</p>
           <a href="${member.website}" target="_blank"><button>Learn More</button></a>
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(card);
       });
     });
+
   const message = document.getElementById("visitor-message");
   const lastVisit = localStorage.getItem("last-visit");
   const now = Date.now();
