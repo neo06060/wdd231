@@ -5,6 +5,7 @@ body {
   background-color: #f7f9fb;
   color: #222;
 }
+
 #menu:hover {
   color: #ccc;
 }
@@ -15,8 +16,24 @@ header {
   justify-content: space-between;
   background-color: #174873;
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+/* Center the heading in header with equal spacing */
+header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.avatar-link {
+  flex-shrink: 0;
 }
 
 header img {
@@ -25,17 +42,13 @@ header img {
   border-radius: 50%;
 }
 
-header span {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
 #menu {
   font-size: 1.5rem;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 nav ul {
@@ -61,7 +74,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #2a5e90; 
+  background-color: #2a5e90;
 }
 
 main {
@@ -115,9 +128,10 @@ footer {
 .wireframe-img {
   width: 450px;
   height: 450px;
-  object-fit: contain; 
-  border: 0px solid; 
+  object-fit: contain;
+  border: 0px solid;
 }
+
 
 .perks-grid {
   display: grid;
@@ -182,6 +196,7 @@ footer {
   z-index: 1;
   pointer-events: none;
 }
+
 
 .avatar-wrapper {
   position: relative;
