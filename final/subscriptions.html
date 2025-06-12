@@ -7,6 +7,7 @@
   <title>Perks - Sifclub</title>
   <link rel="icon" href="images/sif.jpg" type="image/png">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles-small.css">
   <script defer src="scripts/perks.js"></script>
   <script defer src="scripts/common.js"></script>
   <script defer src="scripts/user.js"></script>
@@ -18,22 +19,24 @@
   <meta property="og:url" content="https://neo06060.github.io/wdd231/index.html">
 </head>
 <body>
-
 <header>
   <a href="user.html" id="user-avatar-link">
     <div class="avatar-container">
-      <img id="user-avatar" class="avatar-img" src="images/default.jpg" alt="User Avatar" style="display: none;">
-      <img id="rank-overlay" class="rank-img header-rank-img" src="images/empty.png" alt="Rank Overlay" style="display: none;">
+      <img alt="User Avatar" class="avatar-img" id="user-avatar" src="images/default.jpg" style="display: none;">
+      <img id="rank-overlay" alt="Rank Overlay" class="rank-img header-rank-img" src="images/empty.png" style="display: none;">
     </div>
   </a>
-  <span>Sifclub - Subscription Platform Plan</span>
+    <span>Sifclub - Subscription Platform Plan</span>
   <button id="menu" aria-label="Toggle Menu">☰</button>
 </header>
-
 <nav>
   <ul id="navList">
+  <nav id="mobile-menu" class="hidden">
+  <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="subscriptions.html">Subscription</a></li>
+    <li><a href="subscriptions.html">Subscriptions</a></li>
+  </ul>
+</nav>
   </ul>
 </nav>
 
