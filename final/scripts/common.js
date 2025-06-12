@@ -34,3 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
   if (modifiedSpan) modifiedSpan.textContent = document.lastModified;
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menu");
+  const navList = document.getElementById("navList");
+
+  if (menuBtn && navList) {
+    menuBtn.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  }
+});
