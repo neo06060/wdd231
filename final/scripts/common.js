@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (menuButton && mobileMenu) {
     menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
       mobileMenu.classList.toggle("hidden");
     });
   }
