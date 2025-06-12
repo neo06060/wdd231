@@ -1,0 +1,37 @@
+/* Mobile-only fixes for screens 600px and below */
+@media (max-width: 600px) {
+  /* Ensure the mobile menu is hidden by default */
+  #mobile-menu {
+    display: none;
+    /* Add any base mobile styles here */
+  }
+
+  /* When mobile menu is toggled open */
+  #mobile-menu.show {
+    display: block;
+    position: absolute;
+    top: 50px; /* Adjust to your header height */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Or your menu bg color */
+    z-index: 1000;
+    /* Add any mobile menu styling */
+  }
+
+  /* Fix the hamburger button visibility or size */
+  #menu {
+    display: block; /* Ensure burger button is visible on mobile */
+    cursor: pointer;
+    /* You can add sizing or positioning fixes here */
+  }
+
+  /* Hide desktop nav on mobile */
+  #navList {
+    display: none;
+  }
+
+  /* Optional: Fix any overflow or positioning */
+  body {
+    overflow-x: hidden;
+  }
+}
