@@ -525,7 +525,7 @@ footer {
     display: block;
   }
 }
-/* Navigation menu hidden by default on small screens */
+
 nav ul {
   display: flex;
   gap: 1rem;

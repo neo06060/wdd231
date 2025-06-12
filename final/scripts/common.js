@@ -35,12 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (modifiedSpan) modifiedSpan.textContent = document.lastModified;
 });
 document.addEventListener("DOMContentLoaded", () => {
-  const menuBtn = document.getElementById("menu");
-  const navList = document.getElementById("navList");
+  const menuButton = document.getElementById("menu");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-  if (menuBtn && navList) {
-    menuBtn.addEventListener("click", () => {
-      navList.classList.toggle("active");
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
     });
   }
 });
