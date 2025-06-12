@@ -12,19 +12,28 @@
   <meta property="og:description" content="Basic info about us.">
   <meta property="og:image" content="https://neo06060.github.io/wdd231/siteplan/images/desktop-wireframe.png">
   <meta property="og:url" content="https://neo06060.github.io/wdd231/index.html">
+  <script defer src="scripts/common.js"></script>
+  <script defer src="scripts/user.js"></script>
 </head>
 <body>
 
-  <header>
-    <img src="images/empty.png" alt="Site Logo">
+<header>
+  <a href="user.html" id="user-avatar-link">
+    <div class="avatar-container">
+<img alt="User Avatar" class="avatar-img" id="user-avatar" src="images/default.jpg" style="display: none;">
+<img id="rank-overlay" alt="Rank Overlay" class="rank-img header-rank-img" src="images/empty.png" style="display: none;">
+    </div>
+
+  </a>
+  
     <span>Sifclub - Subscription Platform Plan</span>
     <button id="menu" aria-label="Toggle Menu">☰</button>
   </header>
 
   <nav>
     <ul id="navList">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Subscription</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="subscriptions.html">Subscription</a></li>
     </ul>
   </nav>
 

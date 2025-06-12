@@ -9,3 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('lastModified').textContent = document.lastModified;
 });
+window.addEventListener("DOMContentLoaded", () => {
+  const avatarImg = document.getElementById("user-avatar");
+  const savedAvatar = sessionStorage.getItem("avatar");
+
+  if (avatarImg && savedAvatar) {
+    avatarImg.src = savedAvatar;
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
+});

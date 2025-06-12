@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Info - Sifclub</title>
+  <link rel="icon" href="images/sif.jpg" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="scripts/user.js"></script>
+  <script defer src="scripts/perks.js"></script>
+  <script defer src="scripts/common.js"></script>
+  <style>
+
+    .avatar-img, .rank-img {
+      visibility: hidden;
+    }
+    .avatar-img[src], .rank-img[src] {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="user.html" id="user-avatar-link">
+    <div class="avatar-container">
+<img alt="User Avatar" class="avatar-img" id="user-avatar" src="images/default.jpg" style="display: none;">
+<img id="rank-overlay" alt="Rank Overlay" class="rank-img header-rank-img" src="images/empty.png" style="display: none;">
+    </div>
+  </a>
+  <span>Sifclub - Subscription Platform Plan</span>
+  <button id="menu" aria-label="Toggle Menu">☰</button>
+</header>
+
+<nav>
+  <ul id="navList">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="subscriptions.html">Subscriptions</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="profile-container">
+    <div class="avatar-section">
+      <div class="avatar-wrapper">
+<img id="profile-avatar" src="images/default.jpg" class="avatar-img" alt="User Avatar" style="display: none;">
+<img id="profile-rank-overlay" class="rank-img profile-rank-img" src="images/empty.png" alt="Rank Badge" style="display: none;">
+      </div>
+      <input type="file" id="avatarUpload" accept="image/*" style="display: none;">
+      <button id="edit-avatar-btn">Upload profile image</button>
+    </div>
+
+    <div class="profile-details">
+      <div class="rank-container">
+        <label for="rankSelect">Rank:</label>
+        <select id="rankSelect">
+          <option value="free">Free</option>
+          <option value="bronze">Bronze</option>
+          <option value="gold">Gold</option>
+          <option value="platinum">Platinum</option>
+          <option value="emerald">Emerald</option>
+          <option value="diamond">Diamond</option>
+        </select>
+      </div>
+
+      <label>Name:</label>
+      <input type="text" id="username" placeholder="Enter your name">
+
+      <label>About:</label>
+      <textarea id="bio" placeholder="Describe yourself..."></textarea>
+
+      <button id="saveProfileBtn">Save profile</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Contact: info@sifclub.com | © <span id="year"></span> Sifclub | Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>

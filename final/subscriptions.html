@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perks - Sifclub</title>
+  <link rel="icon" href="images/sif.jpg" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="scripts/perks.js"></script>
+  <script defer src="scripts/common.js"></script>
+  <script defer src="scripts/user.js"></script>
+</head>
+<body>
+
+  <header>
+    <a href="user.html" id="user-avatar-link">
+      <div class="avatar-container">
+        <img id="user-avatar" class="avatar-img" src="images/default.jpg" alt="User Avatar" style="display: none;">
+        <img id="rank-overlay" class="rank-img header-rank-img" src="images/empty.png" alt="Rank Overlay" style="display: none;">
+      </div>
+    </a>
+    <span>Sifclub - Subscription Platform Plan</span>
+    <button id="menu" aria-label="Toggle Menu">☰</button>
+  </header>
+
+  <nav>
+    <ul id="navList">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="subscriptions.html">Subscription</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Perks</h2>
+      <div id="perks-container" class="perks-grid"></div>
+
+      <div id="perk-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+          <button id="modal-close" aria-label="Close modal">&times;</button>
+          <h3 id="modal-title"></h3>
+          <img id="modal-image" src="images/empty.png" alt="" />
+          <p id="modal-description"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Contact: <a href="mailto:info@sifclub.com">info@sifclub.com</a> |
+      © <span id="year"></span> Sifclub |
+      Last Modified: <span id="lastModified"></span>
+    </p>
+  </footer>
+
+</body>
+</html>
