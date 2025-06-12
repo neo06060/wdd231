@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
   if (modifiedSpan) modifiedSpan.textContent = document.lastModified;
-});
-document.addEventListener("DOMContentLoaded", () => {
+
   const menuButton = document.getElementById("menu");
   const mobileMenu = document.getElementById("mobile-menu");
 
