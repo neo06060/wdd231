@@ -5,22 +5,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const savedAvatar = sessionStorage.getItem("avatar");
   const savedSub = sessionStorage.getItem("subscription");
-  
-document.addEventListener("DOMContentLoaded", () => {
+
+  // Burger menu toggle
   const menuBtn = document.getElementById("menu");
   const navList = document.querySelector("nav ul");
 
   menuBtn.addEventListener("click", () => {
-    navList.classList.toggle("open");
+    const isOpen = navList.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", isOpen);
   });
 
+  // Close menu when clicking nav links
   document.querySelectorAll(".navigation a").forEach(link => {
     link.addEventListener("click", () => {
       navList.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", false);
     });
   });
-});
 
+  // Avatar loading
   if (avatarImg) {
     if (savedAvatar) {
       const img = new Image();

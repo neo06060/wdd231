@@ -39,7 +39,7 @@ header img {
   border-radius: 50%;
 }
 
-/* Menu Button */
+/* Menu Button (Burger) - always visible */
 #menu {
   font-size: 1.5rem;
   background: none;
@@ -47,12 +47,51 @@ header img {
   color: white;
   cursor: pointer;
   flex-shrink: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
 }
 
 #menu:hover {
   color: #ccc;
 }
 
+/* Navigation styles */
+nav ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+}
+
+nav ul.open {
+  display: block;
+}
+
+nav li {
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav a.active {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Large screens */
 @media screen and (min-width: 600px) {
   nav ul {
     display: flex !important;
@@ -60,44 +99,22 @@ header img {
     background-color: #000;
   }
 
+  nav ul.open {
+    display: flex !important;
+  }
+
   nav ul li {
     margin: 0 1rem;
+    border-bottom: none;
   }
 
   nav a {
     padding: 1rem;
     border: none;
   }
-
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .home-top {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .about-text {
-    margin-left: 2rem;
-  }
-
-  #courseList {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .course-card {
-    width: 200px;
-  }
 }
 
-  .image-placeholder {
-    flex-shrink: 0;
-  }
-
+/* Mobile navigation */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -381,6 +398,75 @@ footer {
   right: 1rem;
   font-size: 2rem;
   cursor: pointer;
+}
+
+/* Subscription Perks Grid */
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.perk-card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: box-shadow 0.3s ease;
+  min-height: 140px;
+  overflow: hidden;
+}
+
+.perk-card:hover {
+  box-shadow: 0 8px 20px rgba(23, 72, 115, 0.3);
+}
+
+/* Perk Card Icon */
+.perk-icon {
+  font-size: 30px;
+  color: #174873;
+  margin-bottom: 12px;
+}
+
+/* Perk Card Title */
+.perk-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #174873;
+  margin-bottom: 8px;
+}
+
+/* Perk Card Description */
+.perk-description {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Adjusted for smaller screens */
+@media screen and (max-width: 600px) {
+  .profile-details {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+
+  .wireframe-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Subscription Perks Grid */

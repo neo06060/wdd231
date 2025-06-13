@@ -4,28 +4,27 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Sifclub - Subscription Platform Plan</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="images/sif.jpg" type="image/png">
+  <link rel="icon" href="images/sif.jpg" type="image/png" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/styles-small.css">
+  <link rel="stylesheet" href="styles/styles.css" />
 
   <!-- Scripts -->
   <script defer src="scripts/common.js"></script>
 
   <!-- SEO / Social -->
-  <meta name="author" content="Saúl Carracelas">
-  <meta name="description" content="Sifclub is a modern subscription platform offering engaging tiers, exclusive perks, and a clean user experience. Support small companies while enjoying great services.">
-  <meta property="og:title" content="Sifclub - Subscription Platform Plan">
-  <meta property="og:description" content="Explore Sifclub: a user-focused subscription service that’s simple, attractive, and constantly growing.">
-  <meta property="og:image" content="https://neo06060.github.io/wdd231/siteplan/images/desktop-wireframe.png">
-  <meta property="og:url" content="https://neo06060.github.io/wdd231/index.html">
+  <meta name="author" content="Saúl Carracelas" />
+  <meta name="description" content="Sifclub is a modern subscription platform offering engaging tiers, exclusive perks, and a clean user experience. Support small companies while enjoying great services." />
+  <meta property="og:title" content="Sifclub - Subscription Platform Plan" />
+  <meta property="og:description" content="Explore Sifclub: a user-focused subscription service that’s simple, attractive, and constantly growing." />
+  <meta property="og:image" content="https://neo06060.github.io/wdd231/siteplan/images/desktop-wireframe.png" />
+  <meta property="og:url" content="https://neo06060.github.io/wdd231/index.html" />
 </head>
 <body>
 
@@ -33,17 +32,27 @@
 <header>
   <a href="user.html" id="user-avatar-link">
     <div class="avatar-container">
-      <img id="user-avatar"  class="avatar-img" alt="User Avatar"  src="images/default.jpg" style="display:none;">
-      <img id="rank-overlay" class="rank-img header-rank-img" alt="Rank Overlay" src="images/empty.png" style="display:none;">
+      <img id="user-avatar" class="avatar-img" alt="User Avatar" src="images/default.jpg" style="display:none;" />
+      <img id="rank-overlay" class="rank-img header-rank-img" alt="Rank Overlay" src="images/empty.png" style="display:none;" />
     </div>
   </a>
 
   <span>Sifclub&nbsp;‑&nbsp;Subscription&nbsp;Platform&nbsp;Plan</span>
- <!-- Burger button -->
-  <button id="menu"
-          aria-label="Toggle navigation"
-          aria-controls="navList"
-          aria-expanded="false">☰</button>
+
+  <!-- Burger button -->
+  <button
+    id="menu"
+    aria-label="Toggle navigation"
+    aria-controls="navList"
+    aria-expanded="false"
+    aria-haspopup="true"
+  >
+    <svg width="24" height="18" aria-hidden="true" focusable="false" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="24" height="3" fill="white"/>
+      <rect y="7.5" width="24" height="3" fill="white"/>
+      <rect y="15" width="24" height="3" fill="white"/>
+    </svg>
+  </button>
 </header>
 
 <nav>
@@ -52,6 +61,7 @@
     <li><a href="subscriptions.html">Subscription</a></li>
   </ul>
 </nav>
+
 <!-- ------------- Main content ------------- -->
 <main>
   <section>
@@ -94,8 +104,8 @@
     <h2>Wireframes</h2>
     <p>Below are the wireframes for mobile and desktop views.</p>
     <div class="wireframes-container">
-      <img src="images/mobile-wireframe.png"  alt="Mobile Wireframe"   class="wireframe-img" loading="lazy">
-      <img src="images/desktop-wireframe.png" alt="Desktop Wireframe" class="wireframe-img" loading="lazy">
+      <img src="images/mobile-wireframe.png" alt="Mobile Wireframe" class="wireframe-img" loading="lazy" />
+      <img src="images/desktop-wireframe.png" alt="Desktop Wireframe" class="wireframe-img" loading="lazy" />
     </div>
   </section>
 </main>
