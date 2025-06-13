@@ -5,6 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const savedAvatar = sessionStorage.getItem("avatar");
   const savedSub = sessionStorage.getItem("subscription");
+  
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menu");
+  const navList = document.querySelector("nav ul");
+
+  menuBtn.addEventListener("click", () => {
+    navList.classList.toggle("open");
+  });
+
+  document.querySelectorAll(".navigation a").forEach(link => {
+    link.addEventListener("click", () => {
+      navList.classList.remove("open");
+    });
+  });
+});
 
   if (avatarImg) {
     if (savedAvatar) {
@@ -33,14 +48,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
   if (modifiedSpan) modifiedSpan.textContent = document.lastModified;
-
-  // Toggle mobile menu on burger click
-  const menuButton = document.getElementById("menu");
-  const mobileMenu = document.getElementById("mobile-menu");
-
-  if (menuButton && mobileMenu) {
-    menuButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("show");
-    });
-  }
 });
