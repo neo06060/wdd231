@@ -45,8 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('menu')
-          .addEventListener('click', () =>
-            document.getElementById('mobile-menu')
-                    .classList.toggle('show'));
+  /* burger toggle */
+  const burger     = document.getElementById('menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show');
+  });
+
+  /* year / last‑modified utility */
+  const yearSpan    = document.getElementById('year');
+  const modifiedSpan= document.getElementById('lastModified');
+  if(yearSpan)     yearSpan.textContent = new Date().getFullYear();
+  if(modifiedSpan) modifiedSpan.textContent = document.lastModified;
 });

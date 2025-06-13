@@ -1,31 +1,23 @@
-/* ---------- core ---------- */
-#menu{                    /* burger always visible */
-  font-size:1.8rem;
-  background:none;
-  border:none;
-  cursor:pointer;
-}
-
-#navList{                 /* desktop nav */
-  display:flex;
-  gap:1rem;
-  list-style:none;
-  margin:0;
-  padding:0;
-}
-
-#mobile-menu{ display:none; }          /* panel hidden by default */
-#mobile-menu.show{ display:block; }    /* show when JS adds .show */
-
-.hidden{ display:none!important; }     /* utility */
+/* ---------- shared helpers ---------- */
+.hidden           { display:none!important; }
+#mobile-menu.show { display:block; }
 
 /* ---------- phone ≤600px ---------- */
 @media (max-width:600px){
 
-  /* hide horizontal desktop list */
+  /* burger visible */
+  #menu{ 
+    font-size:2rem;
+    background:none;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+  }
+
+  /* hide desktop nav */
   #navList{ display:none; }
 
-  /* vertical slide‑down panel */
+  /* mobile drop‑panel */
   #mobile-menu{
     position:fixed;
     top:60px;               /* header height */
@@ -39,12 +31,12 @@
   #mobile-menu ul{
     list-style:none;
     margin:0;
-    padding:0;
+    padding:1rem 0;
   }
 
   #mobile-menu li a{
     display:block;
-    padding:1rem;
+    padding:.8rem 1rem;
     color:#fff;
     text-decoration:none;
     border-bottom:1px solid rgba(255,255,255,.15);
