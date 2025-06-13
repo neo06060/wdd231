@@ -10,18 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menu");
   const navList = document.querySelector("nav ul");
 
-  menuBtn.addEventListener("click", () => {
-    const isOpen = navList.classList.toggle("open");
-    menuBtn.setAttribute("aria-expanded", isOpen);
-  });
-
-  // Close menu when clicking nav links
-  document.querySelectorAll(".navigation a").forEach(link => {
-    link.addEventListener("click", () => {
-      navList.classList.remove("open");
-      menuBtn.setAttribute("aria-expanded", false);
+  if (menuBtn && navList) {
+    menuBtn.addEventListener("click", () => {
+      const isOpen = navList.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", isOpen);
     });
-  });
+
+    // Close menu when clicking nav links
+    document.querySelectorAll(".navigation a").forEach(link => {
+      link.addEventListener("click", () => {
+        navList.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", false);
+      });
+    });
+  }
 
   // Avatar loading
   if (avatarImg) {
