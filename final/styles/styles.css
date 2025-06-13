@@ -1,3 +1,57 @@
+/* General Body & Fonts */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fb;
+  color: #222;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #174873;
+  color: white;
+  padding: 1rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.avatar-link {
+  flex-shrink: 0;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* Menu Button */
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+#menu:hover {
+  color: #ccc;
+}
 
 @media screen and (min-width: 600px) {
   nav ul {
@@ -40,15 +94,19 @@
   }
 }
 
-.image-placeholder {
-  flex-shrink: 0;
-}
+  .image-placeholder {
+    flex-shrink: 0;
+  }
 
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
     display: none;
     background-color: #003366;
+  }
+
+  nav ul.open {
+    display: flex;
   }
 
   nav li {
@@ -406,84 +464,4 @@ footer {
   z-index: 2;
   pointer-events: auto;
   text-shadow: 0 0 4px #fff;
-}
-/* ---------- Responsive navigation (copied from working site) ---------- */
-/* Header styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #174873;
-  color: white;
-  padding: 1rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
-header img {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
-
-header span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#menu {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Navigation styles */
-nav ul {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #000;
-}
-
-nav ul.open {
-  display: block;
-}
-
-nav li {
-  border-bottom: 1px solid #333;
-}
-
-nav a {
-  color: white;
-  display: block;
-  padding: 0.75rem;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-}
-
-nav a.active {
-  background-color: #ddd;
-  color: #000;
-}
-
-/* Large screens */
-@media screen and (min-width: 600px) {
-  nav ul {
-    display: flex !important;
-    justify-content: center;
-    background-color: #000;
-  }
-
-  nav ul li {
-    margin: 0 1rem;
-  }
-
-  nav a {
-    padding: 1rem;
-    border: none;
-  }
 }
