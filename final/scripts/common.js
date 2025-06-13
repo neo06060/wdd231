@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (menuBtn && navList) {
     menuBtn.addEventListener("click", () => {
       const isOpen = navList.classList.toggle("open");
-      menuBtn.setAttribute("aria-expanded", isOpen);
+menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
     });
 
     // Close menu when clicking nav links
