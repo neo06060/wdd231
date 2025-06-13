@@ -44,3 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('menu')
+          .addEventListener('click', () =>
+            document.getElementById('mobile-menu')
+                    .classList.toggle('show'));
+});
