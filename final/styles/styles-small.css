@@ -1,46 +1,27 @@
-/* ---------- shared helpers ---------- */
-.hidden           { display:none!important; }
-#mobile-menu.show { display:block; }
-
-/* ---------- phone ≤600px ---------- */
-@media (max-width:600px){
-
-  /* burger visible */
-  #menu{ 
-    font-size:2rem;
-    background:none;
-    border:none;
-    color:#fff;
-    cursor:pointer;
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #003366;
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 1rem;
   }
 
-  /* hide desktop nav */
-  #navList{ display:none; }
-
-  /* mobile drop‑panel */
-  #mobile-menu{
-    position:fixed;
-    top:60px;               /* header height */
-    left:0;
-    width:100%;
-    background:#174873;
-    box-shadow:0 4px 10px rgba(0,0,0,.35);
-    z-index:1000;
+  nav ul.open,
+  nav ul.show {
+    display: flex !important;
   }
 
-  #mobile-menu ul{
-    list-style:none;
-    margin:0;
-    padding:1rem 0;
+  nav ul li {
+    margin: 0;
+    border-bottom: 1px solid #333;
+    width: 100%;
   }
 
-  #mobile-menu li a{
-    display:block;
-    padding:.8rem 1rem;
-    color:#fff;
-    text-decoration:none;
-    border-bottom:1px solid rgba(255,255,255,.15);
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    bottom: 10%;
   }
-
-  body{ overflow-x:hidden; }
 }
