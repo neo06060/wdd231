@@ -548,6 +548,6 @@ footer {
   font-size: 2.5rem;
   color: #e63946; 
   z-index: 2;
-  pointer-events: auto;
+  pointer-events: stroke;
   text-shadow: 0 0 4px #fff;
 }
