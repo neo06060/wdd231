@@ -2,25 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Responsive Header with Navigation</title>
-    <!-- External stylesheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="logo">
-        <!-- Replace src with your image path -->
+        <!-- Replace src with your own image -->
         <img src="https://via.placeholder.com/120x40?text=Logo" alt="Logo" />
       </div>
       <h1 class="title">My Website</h1>
-       <button id="menu" aria-label="Toggle Menu">☰
+      <button class="burger" id="burger" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
-        </button>
-        </header>
+      </button>
+    </header>
 
     <!-- Navigation -->
     <nav class="nav" id="nav">
@@ -33,11 +32,10 @@
     </nav>
 
     <!-- Main content placeholder -->
-    <main style="padding: 1rem">
+    <main style="padding: 1rem;">
       <p>Welcome to the website! Replace this with your main content.</p>
     </main>
 
-    <!-- External JavaScript -->
     <script src="main.js"></script>
   </body>
 </html>
