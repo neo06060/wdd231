@@ -34,13 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
   if (modifiedSpan) modifiedSpan.textContent = document.lastModified;
 
-  // ✅ Burger menu toggle (works only on phone)
+  // Toggle mobile menu on burger click
   const menuButton = document.getElementById("menu");
-  const navList = document.getElementById("navList");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-  if (menuButton && navList) {
+  if (menuButton && mobileMenu) {
     menuButton.addEventListener("click", () => {
-      navList.classList.toggle("show");
+      mobileMenu.classList.toggle("show");
     });
   }
 });

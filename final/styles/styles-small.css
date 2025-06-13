@@ -1,34 +1,60 @@
-/* ---------- base / desktop ---------- */
-#menu        { display:none; font-size:2rem; background:none; border:none; cursor:pointer; }
-#navList     { display:flex; gap:1rem; list-style:none; margin:0; padding:0; }
-#navList a   { color:#fff; text-decoration:none; }
-.hidden      { display:none!important; }
+/* Hide desktop nav on small screens */
+nav:not(#mobile-menu) {
+  display: none;
+}
 
-/* ---------- phone ≤ 600 px ---------- */
-@media (max-width:600px){
-  /* show burger */
-  #menu{ display:inline-block; }
+/* Show mobile nav hidden by default */
+nav#mobile-menu {
+  display: none;
+  background-color: #174873;
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 0;
+  position: relative;
+}
 
-  /* hide desktop list by default */
-  #navList{
-    display:none;
-    flex-direction:column;
-    position:fixed;
-    top:60px;           /* header height */
-    left:0;
-    width:100%;
-    background:#174873;
-    z-index:1000;
-  }
+/* When toggled */
+nav#mobile-menu.show {
+  display: block;
+}
 
-  /* reveal when JS adds .show */
-  #navList.show{ display:block; }
+/* Mobile nav styles */
+nav#mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  #navList li a{
-    display:block;
-    padding:.9rem 1rem;
-    border-bottom:1px solid rgba(255,255,255,.15);
-  }
+nav#mobile-menu li {
+  border-bottom: 1px solid #0d2e45;
+}
 
-  body{ overflow-x:hidden; }
+nav#mobile-menu li a {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav#mobile-menu li a:hover {
+  background-color: #2a5e90;
+}
+
+/* Position burger button inside header */
+#menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Make sure header is positioned relative */
+header {
+  position: relative;
 }
