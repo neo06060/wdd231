@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Info - Sifclub</title>
@@ -10,8 +10,8 @@
   <script defer src="scripts/user.js"></script>
   <script defer src="scripts/perks.js"></script>
   <script defer src="scripts/common.js"></script>
-  <meta name="author" content="Saúl Carracelas" />
-  <meta name="description" content="Sifclub is a modern subscription platform offering engaging tiers, exclusive perks, and a clean user experience. Support small companies while enjoying great services." />
+  <meta name="author" content="Saúl Carracelas">
+  <meta name="description" content="Sifclub is a modern subscription platform offering engaging tiers, exclusive perks, and a clean user experience. Support small companies while enjoying great services.">
   <meta property="og:title" content="User edition.">
   <meta property="og:description" content="Edit your user and give it a nice personal touch.">
   <meta property="og:image" content="https://neo06060.github.io/wdd231/siteplan/images/user-wireframe.png">
@@ -26,7 +26,7 @@
       <img id="rank-overlay" alt="Rank Overlay" class="rank-img header-rank-img" src="images/empty.png" loading="lazy">
     </div>
   </a>
-    <span>Sifclub - Subscription Platform Plan</span>
+  <span>Sifclub - Subscription Platform Plan</span>
   <button
     id="menu"
     aria-label="Toggle navigation"
@@ -35,12 +35,13 @@
     aria-haspopup="true"
   >
     <svg width="24" height="18" aria-hidden="true" focusable="false" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="24" height="3" fill="white"/>
-      <rect y="7.5" width="24" height="3" fill="white"/>
-      <rect y="15" width="24" height="3" fill="white"/>
+      <rect width="24" height="3" fill="white"></rect>
+      <rect y="7.5" width="24" height="3" fill="white"></rect>
+      <rect y="15" width="24" height="3" fill="white"></rect>
     </svg>
   </button>
 </header>
+
 <nav id="mobile-menu" class="hidden">
   <ul id="navList">
     <li><a href="index.html">Home</a></li>
@@ -48,13 +49,9 @@
     <li><a href="video.html">Video</a></li>
   </ul>
 </nav>
-<main>
+
 <main>
   <h1>User customization</h1>
-  <section class="profile-container">
-  </section>
-</main>
-
   <section class="profile-container">
     <div class="avatar-section">
       <div class="avatar-wrapper">
@@ -68,7 +65,7 @@
     <div class="profile-details">
       <div class="rank-container">
         <label for="rankSelect">Rank:</label>
-        <select id="rankSelect">
+        <select id="rankSelect" name="rankSelect">
           <option value="free">Free</option>
           <option value="bronze">Bronze</option>
           <option value="gold">Gold</option>
@@ -78,11 +75,11 @@
         </select>
       </div>
 
-      <label>Name:</label>
-      <input type="text" id="username" placeholder="Enter your name">
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your name">
 
-      <label>About:</label>
-      <textarea id="bio" placeholder="Describe yourself..."></textarea>
+      <label for="bio">About:</label>
+      <textarea id="bio" name="bio" placeholder="Describe yourself..."></textarea>
 
       <button id="saveProfileBtn">Save profile</button>
     </div>
