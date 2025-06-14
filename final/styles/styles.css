@@ -575,3 +575,10 @@ footer {
   padding: 0;
   margin: 0;
 }
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, nav, button {
+  font-family: 'Montserrat', sans-serif;
+}
