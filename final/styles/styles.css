@@ -587,14 +587,9 @@ h1, h2, nav, button {
   background-color: #f9f9f9;
   border-radius: 8px;
 }
-.visually-hidden {
-  position: absolute !important;
-  width: 0 !important;
-  height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
+main > h1 {
+  text-align: center;
+  font-size: 1rem; /* smaller font size */
+  margin-bottom: -5rem; /* reduce bottom margin */
+  margin-top: -1rem;
 }
