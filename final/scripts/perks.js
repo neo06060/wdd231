@@ -1,64 +1,16 @@
+// perks.js
 document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('perks-container');
+  if (!container) return; // ← Avoid crash on user.html
+
   const tiers = ["free", "bronze", "silver", "gold", "platinum", "emerald", "diamond"];
   const userTier = (sessionStorage.getItem('subscription') || 'free').toLowerCase();
-  const container = document.getElementById('perks-container');
 
   const modal = document.getElementById("perk-modal");
   const modalTitle = document.getElementById("modal-title");
   const modalImage = document.getElementById("modal-image");
   const modalDescription = document.getElementById("modal-description");
   const modalClose = document.getElementById("modal-close");
-
-  const perks = [
-    {
-      name: "Adblocker",
-      image: "images/perks/noads.webp",
-      tier: "Bronze",
-      description: "Enjoy an ad free experience"
-    },
-    {
-      name: "Support Small Creators",
-      image: "images/perks/smolcreator.webp",
-      tier: "Bronze",
-      description: "Your subscription helps support independent devs and artists contributing to the platform."
-    },
-    {
-      name: "Early Access",
-      image: "images/perks/betastuff.webp",
-      tier: "Silver",
-      description: "Get early access to new features and updates before the general public."
-    },
-    {
-      name: "Monthly Content Drops",
-      image: "images/perks/coolstuff.webp",
-      tier: "Gold",
-      description: "Receive new digital content monthly, such as themes, badges, or enhancements."
-    },
-    {
-      name: "Beta Features",
-      image: "images/perks/creature2.gif",
-      tier: "Platinum",
-      description: "Be the first to test experimental features and give feedback."
-    },
-    {
-      name: "Discounts on Partner Services",
-      image: "images/perks/discount.webp",
-      tier: "Emerald",
-      description: "Get special discounts from small companies we collaborate with."
-    },
-    {
-      name: "Queue priority",
-      image: "images/perks/queueskip.webp",
-      tier: "Emerald",
-      description: "Priority to get into our page if the servers are overflowing"
-    },
-    {
-      name: "Priority Feature Requests",
-      image: "images/perks/listen.webp",
-      tier: "Diamond",
-      description: "Have your feature suggestions considered faster by our dev team."
-    }
-  ];
 
   const tierIndex = (tier) => tiers.indexOf(tier.toLowerCase());
 
@@ -77,10 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <h3>${perk.name}</h3>
       <p>Requires: ${perk.tier}</p>
-      ${isUnlocked
-        ? `<button class="more-info">More Info</button>`
-        : ''
-      }
+      ${isUnlocked ? `<button class="more-info">More Info</button>` : ''}
     `;
 
     if (isUnlocked) {
