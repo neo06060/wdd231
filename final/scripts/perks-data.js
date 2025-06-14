@@ -26,7 +26,7 @@ const perks = [
   },
   {
     name: "Beta Features",
-    image: "images/perks/creature2.gif",
+    image: "images/perks/creature2.jpg ",
     tier: "Platinum",
     description: "Be the first to test experimental features and give feedback."
   },
