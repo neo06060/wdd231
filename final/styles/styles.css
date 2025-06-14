@@ -567,3 +567,11 @@ footer {
 .hidden-input {
   display: none;
 }
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
