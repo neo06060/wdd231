@@ -553,3 +553,17 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+.avatar-img,
+.rank-img {
+  visibility: hidden;
+  display: none;
+}
+
+.avatar-img[src],
+.rank-img[src] {
+  visibility: visible;
+  display: inline;
+}
+.hidden-input {
+  display: none;
+}
