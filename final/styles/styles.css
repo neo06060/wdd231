@@ -593,3 +593,6 @@ main > h1 {
   margin-bottom: 5rem; /* reduce bottom margin */
   margin-top: -1rem;
 }
+body {
+  font-family: 'Montserrat', 'Raleway', sans-serif;
+}
