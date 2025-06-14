@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sifclub - Video</title>
+  <link rel="icon" href="images/sif.jpg" type="image/png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="scripts/common.js"></script>
+  <meta name="author" content="Saúl Carracelas">
+  <meta name="description" content="Watch the latest videos from Sifclub. Stay informed, entertained, and connected.">
+  <meta property="og:title" content="Sifclub - Video">
+  <meta property="og:description" content="Watch exclusive content on Sifclub’s subscription platform.">
+  <meta property="og:image" content="https://neo06060.github.io/wdd231/siteplan/images/desktop-wireframe.png">
+  <meta property="og:url" content="https://neo06060.github.io/wdd231/video.html">
+</head>
+<body>
+<header>
+  <a href="user.html" id="user-avatar-link">
+    <div class="avatar-container">
+      <img id="user-avatar" class="avatar-img" alt="User Avatar" src="images/default.jpg" style="display:none;">
+      <img id="rank-overlay" class="rank-img header-rank-img" alt="Rank Overlay" src="images/empty.png" style="display:none;">
+    </div>
+  </a>
+  <span>Sifclub - Subscription Platform Plan</span>
+  <button
+    id="menu"
+    aria-label="Toggle navigation"
+    aria-controls="navList"
+    aria-expanded="false"
+    aria-haspopup="true"
+  >
+    <svg width="24" height="18" aria-hidden="true" focusable="false" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="24" height="3" fill="white"/>
+      <rect y="7.5" width="24" height="3" fill="white"/>
+      <rect y="15" width="24" height="3" fill="white"/>
+    </svg>
+  </button>
+</header>
+<nav>
+  <ul id="navList" class="navigation">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="subscriptions.html">Subscription</a></li>
+    <li><a href="video.html" class="active">Video</a></li>
+  </ul>
+</nav>
+<main>
+  <h1>Video Demonstration and Reflection</h1>
+  <section class="video-section">
+    <p>Video explaining how the page works.</p>
+    <div class="video-container">
+      <video controls poster="images/video-poster.jpg">
+        <source src="videos/sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>
+    Contact: info@sifclub.com |
+    © <span id="year"></span> Sifclub |
+    Last Modified: <span id="lastModified"></span>
+  </p>
+</footer>
+</body>
+</html>

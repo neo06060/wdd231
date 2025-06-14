@@ -541,3 +541,15 @@ footer {
     display: flex;
   }
 }
+.video-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
